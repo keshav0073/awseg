@@ -4,3 +4,9 @@ from .models import *
 def home(request):
     name=request
     return render(request,"index.html",{'name':name})
+
+def saveTodb(request,name):
+    blog.objects.create(name=name)
+    obj=blog.objects.all()
+    print(obj.count())
+    return HttpResponse("saved in db:"+str(obj.count()))
