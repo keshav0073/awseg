@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'awseg.wsgi.application'
 DATABASES = {
     'default': {
        'ENGINE': 'django.db.backends.mysql',
-       'NAME': 'awseg0073.csmyebannigr.us-east-2.rds.amazonaws.com',
+       'HOST': 'awseg0073.csmyebannigr.us-east-2.rds.amazonaws.com',
        'USER': 'awseg',
        'PASSWORD': 'awseg0073',
        'PORT':3306
