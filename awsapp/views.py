@@ -8,5 +8,5 @@ def home(request):
 def saveTodb(request,name):
     blog.objects.create(name=name)
     obj=blog.objects.all()
-    print(obj.count())
-    return HttpResponse(str(name)+"\n:saved in db:"+str(obj.count()))
+    number=obj.count()
+    return render(request,"particu.html",{'name':name,'number':number})
