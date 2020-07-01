@@ -4,5 +4,6 @@ from .views import *
 
 urlpatterns = [
     path('',home,name="home"),
+    path('saveTodb/<str:name>',saveTodb,name="saveTodb")
    
 ]
