@@ -84,6 +84,7 @@ DATABASES = {
     'default': {
        'ENGINE': 'django.db.backends.mysql',
        'HOST': 'awseg0073.csmyebannigr.us-east-2.rds.amazonaws.com',
+       'NAME': 'AWS_EG',
        'USER': 'awseg',
        'PASSWORD': 'awseg0073',
        'PORT':3306
